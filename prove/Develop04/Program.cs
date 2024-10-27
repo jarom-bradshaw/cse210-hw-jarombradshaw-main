@@ -60,6 +60,6 @@ class Program
             scripture.HideWords(2); // Hides 2 random words each iteration
         }
 
-        Console.WriteLine("All words are hidden! Program ending.");
+        Console.WriteLine("One last try! All words are hidden! The Program will end.");
     }
 }
