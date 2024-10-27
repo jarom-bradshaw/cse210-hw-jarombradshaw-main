@@ -27,11 +27,13 @@ class Program
         {
             var parts = line.Split(',');
 
+            //Extract necessary fields from CSV columns
             string book = parts[5]; // "book_title"
             int chapter = int.Parse(parts[14]); // "chapter_number"
             int verse = int.Parse(parts[15]); // "verse_number"
             string text = parts[16]; // "scripture_text"
 
+            //Create/construct reference and scripture objects.
             Reference reference = new Reference(book, chapter, verse);
             Scripture scripture = new Scripture(reference, text);
             scriptures.Add(scripture);
