@@ -6,16 +6,22 @@ namespace Develop03
 {
     class Program
     {
-        private List<string> activities; // Private instance variable of type List<string>
+        private List<Activity> activities; // Private instance variable of type List Activity. Was <string> at first, but I changed it.
 
         public Program()
         {
-            activities = new List<string>(); // Initializing the List<string> object
+            activities = new List<Activity>(); // Initializing the List<Activity> object. Was string beforehand.
         }
 
         public void Run()
         {
-            // Logic will go here
+            // Construct any items
+            BreathingActivity breathingActivity = new BreathingActivity("Breathing Excercise", "A simple breathing excercise", 5);
+            activities.Add(breathingActivity);
+        
+            // logic to run the activities
+
+            
         }
 
 
@@ -26,3 +32,21 @@ namespace Develop03
         }
     }
 }
+
+//  inhale duration
+//  exhale duration
+
+// animatepause use a dictionary and use a star 
+//    /\
+// __/  \__
+// \      /
+// /_    _\
+//   \  /
+//    \/
+
+//    /\
+// ___/\___
+// \      /
+// /__  __\
+//    \/
+//    \/
